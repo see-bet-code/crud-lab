@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import manageRestaurant from './reducers/manageRestaurant';
+import manageRestaurants from './reducers/manageRestaurant';
+import {combineReducers} from 'redux';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-const store = createStore(manageRestaurant);
+
+const store = createStore(manageRestaurants);
 
 
 ReactDOM.render(
